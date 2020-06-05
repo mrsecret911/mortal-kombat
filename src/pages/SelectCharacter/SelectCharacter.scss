@@ -28,7 +28,7 @@ $gren: #1eb824;
         position: relative;
         outline-width: 10px;
         outline-style: solid;;
-        animation-name: textColor;
+        animation-name: outlineColor;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
     }
@@ -52,7 +52,7 @@ $gren: #1eb824;
     }
 }
 
-@keyframes textColor {
+@keyframes outlineColor {
     0% {outline-color: $gren;}
     50% {outline-color: rgba($gren, 0.5)}
     100% {outline-color: $gren;}
