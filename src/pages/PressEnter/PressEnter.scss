@@ -1,0 +1,21 @@
+.press-enter {
+    font-family: 'MortalKombat';
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    animation-name: textColor;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@keyframes textColor {
+    0% {color: white;}
+    50% {color: gray;}
+    100% {color: white;}
+  }
