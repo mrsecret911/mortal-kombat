@@ -1,16 +1,16 @@
 .battle-loading {
-    background: url('../../assets/bg.jpg') center no-repeat;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-size: auto 100%;
-    color: white;
-    align-items: flex-end;
-    justify-content: center;
+  background: url("../../assets/bg.jpg") center no-repeat;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-size: auto 100%;
+  color: white;
+  align-items: flex-end;
+  justify-content: center;
 
-    svg {
-        margin: 20px 5px;
-        font-size: 40px;
-        color: white;
-    }
+  svg {
+    margin: 20px 5px;
+    font-size: 40px;
+    color: white;
+  }
 }

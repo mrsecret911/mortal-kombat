@@ -1,59 +1,65 @@
 $gren: #1eb824;
 
 .select-character {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__list {
+    font-size: 0;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__list-item {
+    width: 25%;
+    padding: 3px;
+  }
+
+  &__active-item {
+    position: relative;
+    outline-width: 10px;
+    outline-style: solid;
+    animation-name: outlineColor;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  &__selected {
+    align-self: flex-end;
+    flex: 0 0 20%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: "MortalKombat";
     width: 100%;
-
-    &:focus {
-        outline: none;
-    }
-
-    &__list {
-        font-size: 0;
-        display: flex;
-        flex-wrap: wrap;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    &__list-item {
-        width: 25%;
-        padding: 3px;
-    }
-
-    &__active-item {
-        position: relative;
-        outline-width: 10px;
-        outline-style: solid;;
-        animation-name: outlineColor;
-        animation-duration: 0.5s;
-        animation-iteration-count: infinite;
-    }
-
-    &__selected {
-        align-self: flex-end;
-        flex: 0 0 20%;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    &__title {
-        font-family: 'MortalKombat';
-        width: 100%;
-        margin-bottom: 10px;
-        font-size: 28px;
-        color: white;
-        text-transform: uppercase;
-    }
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+  }
 }
 
 @keyframes outlineColor {
-    0% {outline-color: $gren;}
-    50% {outline-color: rgba($gren, 0.5)}
-    100% {outline-color: $gren;}
+  0% {
+    outline-color: $gren;
+  }
+  50% {
+    outline-color: rgba($gren, 0.5);
+  }
+  100% {
+    outline-color: $gren;
+  }
 }

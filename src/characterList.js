@@ -1,76 +1,64 @@
-const url = './assets/characters'
+const url = "./assets/characters";
 
 export default [
-    {
-        name: 'Johnny Cage',
-        imgJpg: `${url}/johnny-cage-jpg.jpg`,
-        imgGif: `${url}/johnny-cage-gif.gif`,
-        index: 0
-    },
-    {
-        name: 'Kano',
-        imgJpg: `${url}/kano-jpg.jpg`,
-        imgGif: `${url}/kano-gif.gif`,
-        index: 1
-    },
-    {
-        name: 'Liu Kang',
-        imgJpg: `${url}/liu-kang-jpg.jpg`,
-        imgGif: `${url}/liu-kang-gif.gif`,
-        index: 2
-    },
-    {
-        name: 'Raiden',
-        imgJpg: `${url}/rayden-jpg.jpg`,
-        imgGif: `${url}/rayden-gif.gif`,
-        index: 3
-    },
-    {
-        name: 'Scorpion',
-        imgJpg: `${url}/scorpion-jpg.jpg`,
-        imgGif: `${url}/scorpion-gif.gif`,
-        index: 4
-    },
-    {
-        name: 'Sonya Blade',
-        imgJpg: `${url}/sonya-blade-jpg.jpg`,
-        imgGif: `${url}/sonya-blade-gif.gif`,
-        index: 5
-    },
-    {
-        name: 'Sub-Zero',
-        imgJpg: `${url}/subzero-jpg.jpg`,
-        imgGif: `${url}/subzero-gif.gif`,
-        index: 6
-    },
-    {
-        name: 'Jax Briggs',
-        imgJpg: `${url}/jax-briggs-jpg.jpg`,
-        imgGif: `${url}/jax-briggs-gif.gif`,
-        index: 7
-    },
-    {
-        name: 'Shang Tsung',
-        imgJpg: `${url}/shangtsung-jpg.jpg`,
-        imgGif: `${url}/shangtsung-gif.gif`,
-        index: 8
-    },
-    {
-        name: 'Reptile',
-        imgJpg: `${url}/reptile-jpg.jpg`,
-        imgGif: `${url}/reptile-gif.gif`,
-        index: 9
-    },
-    {
-        name: 'Baraka',
-        imgJpg: `${url}/baraka-jpg.jpg`,
-        imgGif: `${url}/baraka-gif.gif`,
-        index: 10
-    },
-    {
-        name: 'Jade',
-        imgJpg: `${url}/jade-jpg.jpg`,
-        imgGif: `${url}/jade-gif.gif`,
-        index: 11
-    }
-]
+  {
+    name: "Johnny Cage",
+    img: `${url}/johnny-cage`,
+    index: 0,
+  },
+  {
+    name: "Kano",
+    img: `${url}/kano`,
+    index: 1,
+  },
+  {
+    name: "Liu Kang",
+    img: `${url}/liu-kang`,
+    index: 2,
+  },
+  {
+    name: "Raiden",
+    img: `${url}/rayden`,
+    index: 3,
+  },
+  {
+    name: "Scorpion",
+    img: `${url}/scorpion`,
+    index: 4,
+  },
+  {
+    name: "Sonya Blade",
+    img: `${url}/sonya-blade`,
+    index: 5,
+  },
+  {
+    name: "Sub-Zero",
+    img: `${url}/subzero`,
+    index: 6,
+  },
+  {
+    name: "Jax Briggs",
+    img: `${url}/jax-briggs`,
+    index: 7,
+  },
+  {
+    name: "Shang Tsung",
+    img: `${url}/shangtsung`,
+    index: 8,
+  },
+  {
+    name: "Reptile",
+    img: `${url}/reptile`,
+    index: 9,
+  },
+  {
+    name: "Baraka",
+    img: `${url}/baraka`,
+    index: 10,
+  },
+  {
+    name: "Jade",
+    img: `${url}/jade`,
+    index: 11,
+  },
+];

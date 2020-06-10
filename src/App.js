@@ -1,19 +1,15 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import './App.css';
-import PressEnter from './pages/PressEnter';
-import SelectCharacter from './pages/SelectCharacter';
-import BattleLoading from './pages/BattleLoading';
+import "./App.css";
+import PressEnter from "./pages/PressEnter";
+import SelectCharacter from "./pages/SelectCharacter";
+import BattleLoading from "./pages/BattleLoading";
 
 function App() {
   return (
     <div className="App">
-       <Router>
+      <Router>
         <Switch>
           <Route exact path="/">
             <PressEnter />
@@ -25,7 +21,7 @@ function App() {
             <BattleLoading />
           </Route>
         </Switch>
-       </Router>
+      </Router>
     </div>
   );
 }

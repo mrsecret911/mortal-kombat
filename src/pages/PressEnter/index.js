@@ -1,30 +1,32 @@
-import React, { useEffect, useCallback, useRef, memo } from 'react';
+import React, { useCallback, memo, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import useSound from "use-sound";
 
-import './PressEnter.scss';
-import {  ARROW_ENTER } from '../../constants';
-import click from '../../assets/click.mp3'
+import "./PressEnter.scss";
+import { KEY_ENTER, CLICK_TIMEOUT } from "../../constants";
+import AutoFocus from "../../containers/AutoFucus";
+import click from "../../assets/click.mp3";
 
 function BattleLoading() {
-  const container = useRef(null);
   const history = useHistory();
-  const clickAudio = new Audio(click);
+  const [playClick, { stop: stopClick }] = useSound(click);
 
-  useEffect(() => {
-    container.current.focus();
-  }, []);
+  const onSelect = useCallback(
+    ({ key }) => {
+      if (key === KEY_ENTER) {
+        playClick();
+        setTimeout(() => history.push("/select"), CLICK_TIMEOUT);
+      }
+    },
+    [history, playClick]
+  );
 
-  const onSelect = useCallback(({ key }) => {
-    if (key === ARROW_ENTER) {
-      clickAudio.play()
-      history.push('/select'); 
-    }
-  }, [history, clickAudio]);
+  useEffect(() => stopClick, [stopClick]);
 
   return (
-    <div className='press-enter' tabIndex='0' ref={container} onKeyDown={onSelect}>
+    <AutoFocus onKeyDown={onSelect} className="press-enter">
       <h1>Press enter to start</h1>
-    </div>
+    </AutoFocus>
   );
 }
 
